@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--server-->
+    <!--<string name="webUrl">http://10.0.9.253:81/bepl/</string>-->
+    <!--<string name="webUrl">http://10.0.9.253:81/bel0914/</string>-->
+    <!--local-->
+    <!--<string name="webUrl">http://192.168.0.220:81/bepl_test/</string>&lt;!&ndash;sandip&ndash;&gt;-->
+    <string name="webUrl">http://1.22.124.222:81/bepl/</string>test server
+    <string name="saveDeviceId">http://1.22.124.222:81/possibill/saveDeviceId.php</string>
+    <string name="registerDevice">http://1.22.124.222:81/possibill/RegisterDevice.php</string>
+    <string name="login">webservice/getShiftTarget</string>
+    <string name="load_data">webservice/getShiftMultipleTarget</string>
+    <string name="synch_attendance">webservice/setAttendance</string>
+    <string name="empInterlock">webservice/empInterlock</string>
+    <string name="getAllCell">webservice/getCellByPlant</string>
+    <string name="whatStatus">webservice/whatStatus</string>
+    <string name="changeStatus">webservice/changeStatus</string>
+    <!--update app use 1.22-->
+    <string name="checkUpdate">http://1.22.124.222:81/possibill/apk_download_api.php</string>
+    <string name="downloadUrl">http://1.22.124.222:81/possibill/</string>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="20pt"
+    tools:context="engineering.badve.badveengineering.reports.DeleteQueryActivity">
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="UPDATE from booking WHERE id = '0'" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:onClick="deleteData"
+
+        android:text="Delete" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button3"
+        android:inputType="textPersonName"
+        android:text="Insert into booking(designation,intarget,incount,outcount,name,contractor_code,cellId,idd,date,sstatus,tollerance,updated_target) VALUES ('UNSKILL','8','0','0','A1','1114_42249','1114AC01','1707122','15-02-2018','0','100','16')" />
+
+    <Button
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText3"
+        android:onClick="insertData"
+
+        android:text="Insert"
+        android:id="@+id/button4" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/button4"
+        android:onClick="insertAttendance"
+
+        android:text="Button" />
+
+
+</RelativeLayout>

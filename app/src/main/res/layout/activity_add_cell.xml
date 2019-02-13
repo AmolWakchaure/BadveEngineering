@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_back"
+    tools:context="engineering.badve.badveengineering.activity.AddCellActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#A6000000">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10pt"
+                android:layout_marginTop="10pt"
+                android:layout_marginRight="5pt"
+                android:layout_marginBottom="10pt"
+                android:layout_weight="0.8">
+
+                <ScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/a"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            card_view:cardCornerRadius="8dp"
+                            card_view:cardElevation="15dp"
+                            card_view:contentPadding="5dp">
+
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginLeft="10pt"
+                                    android:layout_marginRight="10pt"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10pt"
+                                        android:layout_marginTop="5pt"
+                                        android:layout_marginRight="10pt"
+                                        android:background="@drawable/round_border"
+                                        android:orientation="vertical">
+
+
+                                        <engineering.badve.badveengineering.widgets.MyTextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="25pt"
+                                            android:layout_marginTop="5pt"
+                                            android:text="Note : You can add maximum 3 cell id here."
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                            android:textColor="@android:color/holo_red_dark" />
+
+                                        <engineering.badve.badveengineering.widgets.MyTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="25pt"
+                                            android:layout_marginTop="5pt"
+                                            android:layout_marginRight="25pt"
+                                            android:text="Select Cell ID First*"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                            android:textColor="@color/colorPrimary"
+                                            android:textStyle="bold" />
+
+                                        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                                            android:id="@+id/cellIdSearchableSpinner"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="25pt"
+                                            android:layout_marginLeft="25pt"
+                                            android:layout_marginTop="5pt"
+                                            android:layout_marginRight="25pt"
+                                            android:background="@drawable/border_dr"
+                                            android:textColor="@color/colorBlack"
+                                            android:textSize="15pt"
+                                            android:typeface="sans"
+                                            app:hintText="Select Cell ID" />
+
+
+                                        <engineering.badve.badveengineering.widgets.MyButton
+                                            android:id="@+id/submitCellIdButton"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="25pt"
+                                            android:layout_marginLeft="25pt"
+                                            android:layout_marginTop="5pt"
+                                            android:layout_marginRight="25pt"
+                                            android:background="@drawable/round_button"
+                                            android:text="Submit"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/colorWhite"
+                                            android:textSize="11pt" />
+
+                                        <View
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="5pt" />
+
+                                    </LinearLayout>
+
+                                    <engineering.badve.badveengineering.widgets.MyButton
+                                        android:id="@+id/updateAppButton"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="25pt"
+                                        android:layout_marginLeft="25pt"
+                                        android:layout_marginTop="5pt"
+                                        android:layout_marginRight="25pt"
+                                        android:background="@drawable/round_b"
+                                        android:text="Change Password"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="11pt" />
+
+                                    <engineering.badve.badveengineering.widgets.MyButton
+                                        android:id="@+id/updateAppButtonAnother"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="25pt"
+                                        android:layout_marginLeft="25pt"
+                                        android:layout_marginTop="5pt"
+                                        android:layout_marginRight="25pt"
+                                        android:background="@drawable/round_button"
+                                        android:text="Update App"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="11pt" />
+
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="5pt" />
+                                </LinearLayout>
+
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+
+                    </RelativeLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10pt"
+                android:layout_marginRight="10pt"
+                android:layout_marginBottom="10pt"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardElevation="15dp"
+                    card_view:contentPadding="5dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="10pt"
+                            android:layout_marginRight="10pt"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <engineering.badve.badveengineering.widgets.MyTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15pt"
+                                android:text="Added Cell IDs"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                                android:textColor="@color/colorAccent" />
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1pt"
+                                android:layout_marginTop="10pt"
+                                android:background="@color/colorPrimary">
+
+                            </View>
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/cellIdsRecyclerView"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent">
+
+                            </android.support.v7.widget.RecyclerView>
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

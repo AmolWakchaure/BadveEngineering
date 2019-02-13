@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_back"
+    tools:context="engineering.badve.badveengineering.authentication.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#A6000000">
+
+
+        <Button
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hardware"
+            android:visibility="gone"
+
+            />
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/a"
+            android:layout_width="220pt"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="2.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2.5dp"
+            card_view:cardCornerRadius="8dp"
+            card_view:cardElevation="15dp"
+            card_view:contentPadding="5dp">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="15pt"
+                android:orientation="vertical">
+
+                <engineering.badve.badveengineering.widgets.MyButton
+                    android:id="@+id/tabIdButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25pt"
+                    android:layout_marginTop="10pt"
+                    android:background="@drawable/round_b"
+                    android:enabled="false"
+                    android:text="Tab ID"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="11pt" />
+
+                <engineering.badve.badveengineering.widgets.MyEditextt
+                    android:id="@+id/et_pass"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10pt"
+                    android:drawablePadding="6dp"
+                    android:gravity="center"
+                    android:hint="Password"
+                    android:visibility="gone"
+                    android:paddingBottom="30dp"
+                    android:textSize="15pt"
+                    app:drawable_hide="@drawable/ic_visibility_off_black_36dp"
+                    app:drawable_show="@drawable/ic_visibility_black_36dp" />
+
+
+                <!--<engineering.badve.badveengineering.widgets.MyEditext-->
+                <!--android:id="@+id/myEditext"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10pt"-->
+                <!--android:gravity="center"-->
+                <!--android:imeOptions="actionNext"-->
+                <!--android:inputType="textPassword|textNoSuggestions"-->
+                <!--android:hint="Password"-->
+                <!--android:paddingBottom="30dp"-->
+                <!--android:textSize="20pt">-->
+
+                <!--</engineering.badve.badveengineering.widgets.MyEditext>-->
+
+
+                <engineering.badve.badveengineering.widgets.MyEditext
+                    android:id="@+id/licenseKeyEditext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10pt"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:hint="License Key"
+                    android:inputType="textNoSuggestions"
+                    android:paddingBottom="30dp"
+                    android:textSize="15pt" />
+
+                <engineering.badve.badveengineering.widgets.MyButton
+                    android:id="@+id/updateButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25pt"
+                    android:layout_marginTop="10pt"
+                    android:background="@drawable/round_button"
+                    android:text="Update"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="11pt" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--<ImageView-->
+        <!--android:id="@+id/button2"-->
+        <!--android:layout_width="50pt"-->
+        <!--android:layout_height="50pt"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginEnd="60dp"-->
+        <!--android:layout_marginTop="47dp"-->
+        <!--android:src="@drawable/ic_launcher_badve" />-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/hideRelativeLayout"
+        android:layout_width="fill_parent"
+        android:visibility="gone"
+        android:layout_height="fill_parent"
+        android:background="@color/colorWhite">
+
+        <com.singh.daman.proprogressviews.DoubleArcProgress
+            android:id="@+id/progress"
+            android:layout_width="35pt"
+            android:layout_height="35pt"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:arcRadius="30dp"
+            app:colorofArc="@color/colorPrimary" />
+
+        <engineering.badve.badveengineering.widgets.MyTextView
+            android:id="@+id/progressTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5pt"
+            android:text="Please wait..."
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    </RelativeLayout>
+
+    <!--<include-->
+    <!--android:id="@+id/progressBarr"-->
+    <!--layout="@layout/progress_layout"/>-->
+
+
+</RelativeLayout>

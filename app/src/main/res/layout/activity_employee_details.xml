@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="engineering.badve.badveengineering.reports.TableBookingDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="30pt">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+
+            android:layout_height="fill_parent">
+            <TextView
+                android:id="@+id/idTextView"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="id"
+                android:gravity="center_vertical"
+                android:layout_height="fill_parent" />
+            <TextView
+                android:id="@+id/rfidNumber"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="rfidNumber"
+                android:gravity="center_vertical"
+                android:layout_height="fill_parent" />
+            <TextView
+                android:id="@+id/bnumber"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="bnumber"
+                android:gravity="center_vertical"
+                android:layout_height="fill_parent" />
+            <TextView
+                android:id="@+id/designation"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="designation"
+                android:gravity="center_vertical"
+                android:layout_height="fill_parent" />
+            <TextView
+                android:id="@+id/contractor_code"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="contractor_code"
+                android:gravity="center_vertical"
+                android:layout_height="fill_parent" />
+            <TextView
+                android:id="@+id/cellId"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="cellId"
+                android:gravity="center_vertical"
+                android:layout_height="fill_parent" />
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="date"
+                android:layout_height="fill_parent" />
+            <TextView
+                android:id="@+id/sstatus"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="sstatus"
+                android:layout_height="fill_parent" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.1pt"
+        android:background="@color/colorPrimary" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/reportsRecyclerView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

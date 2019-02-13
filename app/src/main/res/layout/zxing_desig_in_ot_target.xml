@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30pt"
+        android:layout_weight="6"
+        android:background="@color/screen_color"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/designationLinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="0.3pt"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/designationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Designation"
+
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/dateOutTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(10-1-2017)"
+                android:textSize="5pt"
+                android:textColor="@color/colorBlack"
+                  />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/inTargetLinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="0.3pt"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/inTargetTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In Target"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/inCountLinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="0.3pt"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/inCountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In Count"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/outCountLinearLayout"
+            android:layout_width="fill_parent"
+
+            android:layout_height="fill_parent"
+            android:layout_margin="0.3pt"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/outCountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Out Count"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/shiftLinearLayout"
+            android:layout_width="fill_parent"
+
+            android:layout_height="fill_parent"
+            android:layout_margin="0.3pt"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/shiftNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shift"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

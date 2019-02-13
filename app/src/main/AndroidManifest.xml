@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="engineering.badve.badveengineering">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-feature android:name="android.hardware.usb.host" />
+    <uses-feature android:name="android.hardware.usb.accessory" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+    <application
+        android:name=".classes.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_badve"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/ic_launcher_badve"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <receiver android:name=".receiver.ConnectivityChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".authentication.SplashActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- Hardware permission -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
+                android:resource="@xml/accessory_filter" />
+        </activity>
+        <activity
+            android:name=".dashboard.HomeActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".authentication.LoginActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".wifisetting.WifiConfigurationActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.WebviewActivity"
+            android:screenOrientation="landscape" />
+
+        <service android:name=".services.LoadDailyData" />
+        <service android:name=".services.FloatingFaceBubbleService" />
+        <service android:name=".services.ResetScreens" />
+
+        <activity android:name=".activity.AddCellActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".activity.UpdateAppActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".download.DownloadActivity" />
+        <activity android:name=".reports.TableBookingDetailsActivity" />
+        <activity android:name=".reports.DeleteQueryActivity" />
+        <activity android:name=".reports.MenuActivity" />
+        <activity android:name=".reports.AttendanceActivity" />
+        <activity android:name=".reports.EmployeeDetailsActivity" />
+        <activity android:name=".reports.ShiftActivity" />
+        <activity android:name=".activity.ChangePasswordActivity"></activity>
+    </application>
+
+</manifest>

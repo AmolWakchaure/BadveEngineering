@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="engineering.badve.badveengineering.reports.MenuActivity">
+
+    <Button
+
+        android:layout_width="fill_parent"
+        android:onClick="deleteQuery"
+        android:layout_height="wrap_content"
+        android:text="Delete Query"
+         />
+    <Button
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="displayBooking"
+        android:text="Booking"
+        />
+    <Button
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="displayAttendance"
+        android:text="Attendance"
+        />
+    <Button
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="displayEmployee"
+        android:text="Employee"
+        />
+    <Button
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="displayShift"
+        android:text="Shift"
+        />
+</LinearLayout>
